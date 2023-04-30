@@ -14,7 +14,7 @@ with open('credentials.csv', 'r') as file:
 client =  boto3.client('rekognition', region_name='us-west-2',
                         aws_access_key_id=access_key_id, aws_secret_access_key=secret_access_key)
 
-photo = 'Puffy.jpeg'
+photo = 'photos/puppy.jpeg'
 
 with open(photo, 'rb') as image_file:
     source_bytes = image_file.read()
